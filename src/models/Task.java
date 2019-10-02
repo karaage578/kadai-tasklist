@@ -7,11 +7,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "massages")
-public class Message {
+@NamedQueries({
+        @NamedQuery(name = "getAllTasks", query = "SELECT t FROM Task AS t ORDER BY t.id DESC")
+})
+@Table(name = "tasks")
+public class Task {
     //フィールド
     @Id
     @Column(name = "id")
