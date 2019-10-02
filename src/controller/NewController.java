@@ -36,7 +36,7 @@ public class NewController extends HttpServlet {
 
         request.setAttribute("task", new Task());
 
-        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/new.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
         rd.forward(request, response);
     }
 
