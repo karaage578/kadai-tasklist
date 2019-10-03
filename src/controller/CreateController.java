@@ -58,7 +58,7 @@ public class CreateController extends HttpServlet {
                 request.setAttribute("task", t);
                 request.setAttribute("errors", errors);
 
-                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/new.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
                 rd.forward(request, response);
             } else {
 
