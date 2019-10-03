@@ -57,7 +57,7 @@ public class UpdateController extends HttpServlet {
                 request.setAttribute("task", t);
                 request.setAttribute("errors", errors);
 
-                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/edit.jsp");
                 rd.forward(request, response);
             } else {
 
